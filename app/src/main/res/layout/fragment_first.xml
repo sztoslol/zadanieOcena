@@ -43,10 +43,10 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/wynik"
+        android:id="@+id/wyniktext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wynik"
+        android:text="Wynik: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

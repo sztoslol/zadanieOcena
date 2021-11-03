@@ -11,7 +11,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
-import android.view.TextureView
 import android.view.View
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.google.android.material.textfield.TextInputLayout
@@ -66,11 +65,13 @@ class MainActivity : AppCompatActivity() {
     override fun <T : View?> findViewById(id: Int): T {
         return super.findViewById(id)
         findViewById<Button>(R.id.wyswietl).setOnClickListener {
-            findViewById<TextView>(R.id.wynik).text = wynik
+            findViewById<TextView>(R.id.wyniktext).text = wynik
         }
         findViewById<Button>(R.id.zastap).setOnClickListener {
-
+            findViewById<TextView>(R.id.wyniktext).text = "wynik: " + wynik
         }
     }
+
+
 
 }
